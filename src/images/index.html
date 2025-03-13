@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="input.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container bg-black">
+    <nav class="bg-black border-gray-200 dark:bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://drive.google.com/thumbnail?id=14Od1g6miFGXucp1rwxEyt2eFh_E1SjYE" class="h-8" alt="Logo">
+          <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">Hey There!</span>
+        </a>
+        <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button type="button"
+            class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+            id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+            data-dropdown-placement="bottom">
+            <span class="sr-only">Open user menu</span>
+            <img class="w-8 h-8 rounded-full"
+              src="https://drive.google.com/thumbnail?id=1sWSGzPAr6l5yAovqUFL9xT9RcJjyweWu" alt="user photo">
+          </button>
+          <div
+            class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow-sm dark:bg-gray-700 dark:divide-gray-600"
+            id="user-dropdown">
+            <div class="px-4 py-3">
+              <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+              <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+            </div>
+            <ul class="py-2" aria-labelledby="user-menu-button">
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                  out</a>
+              </li>
+            </ul>
+          </div>
+          <button data-collapse-toggle="navbar-user" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-user" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#home"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#collection"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Collection</a>
+            </li>
+            <li>
+              <a href="#socials"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Socials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="container4">
+    <h1 class="heading">
+      A Photographic Journey Through Thapar Institute of Engineering and Technology
+    </h1>    
+  </div>
+  <div class="container5" id="about">
+    <h1 class="heading2">About Me 😁</h1>
+    <p class="info">Hey everyone, Im Jaiveer Singh, a first year undergard student at thapar institute of enginieering and technology. Everyday I walk through the campus, I get a beautiful chance of seeing the beauty of the lovely campus. The buildings, the trees, the scenic pathways all make me fall in love with this beautiful place. One day, I had a beautoful idea, that why not share my collection with the other people, So I created this website, where I will be uploading the clicks regularly.
+      <br>
+    Device - Realme Narzo 50 5g 📱.
+    </p>
+  </div>
+  <div class="container2 bg-black">
+    <div class="stack">
+      <div class="card">
+        <div class="image">
+          <img src="main.jpg" alt="">
+        </div>
+      </div>
+    </div> 
+  </div> 
+    <div class="container3" id="collection">
+      <div id="image-gallery"></div>
+      <div class="panel">
+        <img src="1.jpg" alt="image1">
+      </div>
+      <div class="panel">
+        <img src="2.jpg" alt="image3">
+      </div>
+      <div class="panel">
+        <img src="3.jpg" alt="image4">
+      </div>
+      <div class="panel">
+        <img src="4.jpg" alt="image5">
+      </div>
+      <div class="panel">
+        <img src="5.jpg" alt="image6">
+      </div>
+      <div class="panel">
+        <img src="6.jpg" alt="image7">
+      </div>
+      <div class="panel">
+        <img src="7.jpg" alt="image8">
+      </div>
+      <div class="panel">
+        <img src="8.jpg" alt="image9">
+      </div>
+      <div class="panel">
+        <img src="9.jpg" alt="image10">
+      </div>
+      <div class="panel">
+        <img src="10.jpg" alt="image11">
+      </div>
+      <div class="panel">
+        <img src="12.jpg" alt="image12">
+      </div>
+      <div class="panel">
+        <img src="13.jpg" alt="image13">
+      </div>
+      <div class="panel">
+        <img src="14.jpg" alt="image14">
+      </div>
+      <div class="panel">
+        <img src="15.jpg" alt="image15">
+      </div>
+      <div class="panel">
+        <img src="16.jpg" alt="image16">
+      </div>
+      <div class="panel">
+        <img src="17.jpg" alt="image17">
+      </div>
+      <div class="panel">
+        <img src="18.jpg" alt="image18">
+      </div>
+      <div class="panel">
+        <img src="19.jpg" alt="image19">
+      </div>
+      <div class="panel">
+        <img src="20.jpg" alt="image20">
+      </div>
+      <div class="panel">
+        <img src="21.jpg" alt="image22">
+      </div>
+      <div class="panel">
+        <img src="22.jpg" alt="image22">
+      </div>
+      <div class="panel">
+        <img src="23.jpg" alt="image23">
+      </div>
+      <div class="panel">
+        <img src="24.jpg" alt="image24">
+      </div>
+      <div class="panel">
+        <img src="25.jpg" alt="image25">
+      </div>
+      <div class="panel">
+        <img src="26.jpg" alt="image26">
+      </div>
+      <div class="panel">
+        <img src="27.jpg" alt="image27">
+      </div>
+    </div>
+    <div class="container6" id="socials">
+        <h1 class="heading3">Connect with me!</h1>
+        <a href="https://www.instagram.com/jaiveer._.07/">
+          <img src="instagram.png" target="_blank" alt="instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/jaiveer-singh-930151264/">
+          <img src="linkedin.png" target="_blank" alt="linkedin">
+        </a>
+        <a href="https://x.com/Jaiveer03254338">
+          <img src="twitter.png" target="_blank" alt="twitter">
+        </a>
+    </div>
+  <script type="module" src="script.js">
+  </script>
+</body>
+</html>
